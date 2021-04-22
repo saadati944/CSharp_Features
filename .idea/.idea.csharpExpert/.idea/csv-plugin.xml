@@ -10,6 +10,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/csharpExpert/features/Lambda.cs">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/csharpExpert/features/Structs.cs">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
