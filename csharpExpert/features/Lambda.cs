@@ -18,6 +18,10 @@ namespace csharpExpert.features
             
             // second mod :
             Func<int, int> square = x => x * x;
+            // for more than one parameter, cover input parameters in parentheses :
+            // Func<int, int, int> square = (x, y) => x * y;
+            // in a lambda you can even specify the input parameters type like this :
+            // Func<int, int> square = (int x) => x * x;
             var squareNumbers = numbers.Select(square);
             
             string.Join(", ", squareNumbers).WriteLine();
