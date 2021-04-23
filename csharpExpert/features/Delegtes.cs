@@ -6,8 +6,12 @@ namespace csharpExpert.features
         {
             "delegates".WriteLine();
             string juice = "water";
+            
             DrinkAction modeOfDrinking = drinkWithSugar; 
             DoDrinking(modeOfDrinking, juice);
+            // same as (with action):
+            // var modeOfDrinking = new DrinkAction(drinkWithSugar); 
+            // DoDrinking(modeOfDrinking, juice);
         }
 
         private delegate void DrinkAction(string juice);
@@ -15,7 +19,7 @@ namespace csharpExpert.features
         private void DoDrinking(DrinkAction action, string juice)
         {
             action?.Invoke(juice);
-            // same as
+            // same as :
             // if (action is not null)
             //     action(juice);
         }
