@@ -15,7 +15,8 @@ namespace csharpExpert
                 new Delegtes(),
                 new FuncsAndActions(),
                 new Goto(),
-                new AsyncAwait()
+                new AsyncAwait(),
+                new HashTable()
             };
             
             Console.WriteLine("C# features");
