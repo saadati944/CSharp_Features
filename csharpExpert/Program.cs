@@ -11,7 +11,8 @@ namespace csharpExpert
             IFeature[] features = new IFeature[]
             {
                 new Lambda(),
-                new AnonymousTypes()
+                new AnonymousTypes(),
+                new Delegtes()
             };
             
             Console.WriteLine("C# features");
