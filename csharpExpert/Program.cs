@@ -13,7 +13,7 @@ namespace csharpExpert
                 new Lambda(),
                 new AnonymousTypes(),
                 new Delegtes(),
-                new Funcs()    
+                new FuncsAndActions()    
             };
             
             Console.WriteLine("C# features");
