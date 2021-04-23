@@ -16,7 +16,8 @@ namespace csharpExpert
                 new FuncsAndActions(),
                 new Goto(),
                 new AsyncAwait(),
-                new HashTable()
+                new HashTable(),
+                new Generics()
             };
             
             Console.WriteLine("C# features");
