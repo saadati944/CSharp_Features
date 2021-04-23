@@ -12,7 +12,8 @@ namespace csharpExpert
             {
                 new Lambda(),
                 new AnonymousTypes(),
-                new Delegtes()
+                new Delegtes(),
+                new Funcs()    
             };
             
             Console.WriteLine("C# features");
@@ -26,6 +27,8 @@ namespace csharpExpert
         }
     }
 
+    // this is also a c# feature
+    // the extension methods
     public static class extensions
     {
         public static void WriteLine(this object obj)
