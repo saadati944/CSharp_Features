@@ -25,6 +25,16 @@ namespace csharpExpert.features
             var squareNumbers = numbers.Select(square);
             
             string.Join(", ", squareNumbers).WriteLine();
+            
+            
+            "lambda with no parameters :".WriteLine();
+            "number is :".Write();
+            GetNumber getn = () => 10;
+            // this part [() => 10] is a lambda
+            // and the getn is a delegate
+            // delegate is something like a container that we put our functions into.
+            getn().WriteLine();
         }
+        private delegate int GetNumber();
     }
 }
