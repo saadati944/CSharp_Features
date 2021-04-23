@@ -14,7 +14,8 @@ namespace csharpExpert
                 new AnonymousTypes(),
                 new Delegtes(),
                 new FuncsAndActions(),
-                new Goto()
+                new Goto(),
+                new AsyncAwait()
             };
             
             Console.WriteLine("C# features");
