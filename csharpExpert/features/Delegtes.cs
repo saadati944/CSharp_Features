@@ -1,3 +1,5 @@
+using System;
+
 namespace csharpExpert.features
 {
     public class Delegtes : IFeature
@@ -10,8 +12,8 @@ namespace csharpExpert.features
             DrinkAction modeOfDrinking = drinkWithSugar; 
             DoDrinking(modeOfDrinking, juice);
             // same as (with action):
-            // var modeOfDrinking = new DrinkAction(drinkWithSugar); 
-            // DoDrinking(modeOfDrinking, juice);
+            Action<string> modeOfDrinkingWithAction = drinkWithSugar; 
+            DoDrinkingWithAction(modeOfDrinkingWithAction, juice);
         }
 
         private delegate void DrinkAction(string juice);
@@ -23,6 +25,7 @@ namespace csharpExpert.features
             // if (action is not null)
             //     action(juice);
         }
+        private void DoDrinkingWithAction(Action<string> action, string juice) => action?.Invoke($"{juice} By action");
 
         private void drinkWithSugar(string juice)
         {
