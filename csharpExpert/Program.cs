@@ -18,7 +18,8 @@ namespace csharpExpert
                 new AsyncAwait(),
                 new HashTable(),
                 new Generics(),
-                new Linq()
+                new Linq(),
+                new IoC()
             };
             
             Console.WriteLine("C# features");
